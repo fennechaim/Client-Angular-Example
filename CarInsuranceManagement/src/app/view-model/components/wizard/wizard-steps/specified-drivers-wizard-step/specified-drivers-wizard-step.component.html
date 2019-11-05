@@ -1,0 +1,48 @@
+<form [formGroup]="stepForm" class="container">
+  <div class="row justify-content-center">
+    <div class="col-auto mr-4">
+      <driver class="primary-driver" [titleKey]="'POLICY_OWNER'" [isActive]="true" #primaryDriver [isYoungDriverCheckEnabled]="false" [key]="'primaryDriver'" [parentFormGroup]="stepForm" [driver]="process.policyOwner" [minAge]="18" [maxAge]="75"></driver>
+    </div>
+    <div class="col-auto animated" ngClass="{'bounceInLeft':isRtL}" [hidden]="!primaryDriver.isValid">
+      <driver class="youngest-driver" [titleKey]="'YOUNGEST_DRIVER_AGE'" [youngDriverIsMe]="process.isPolicyOwnerYoungestDriver" [isActive]="primaryDriver.isValid" #youngestDriver (isYoungDriverChanged)="setIsYoungestDriverIsPolicyOwner($event)" [isYoungDriverCheckEnabled]="true" [key]="'youngestDriver'" [parentFormGroup]="stepForm" [driver]="process.isPolicyOwnerYoungestDriver ? process.policyOwner : process.firstYoungDriver" ></driver>
+    </div>
+  </div>
+
+  <div [hidden]="!youngestDriver?.isValid" class="animated bounceInUp text-center mt-3">
+    <h4 translate *ngIf="isPolicyOwnerIsYoungestDriverAndNotYoungOrNewDriver">ADDITIONAL_YOUNG_OR_NEW_DRIVERS_QUESTION</h4>
+    <h4 translate *ngIf="!isPolicyOwnerIsYoungestDriverAndNotYoungOrNewDriver">ADDITIONAL_YOUNG_DRIVERS_QUESTION</h4>
+
+
+    <div class="row justify-content-center">
+      <mat-radio-group class="ml-4 mr-4" formControlName="hasAdditionalDrivers" (change)="hasAdditionalDriverChanged($event.value)">
+        <mat-radio-button class="ml-2" [value]="false" class="additionalDriversFalse"><h5 translate="">NO</h5></mat-radio-button>
+        <mat-radio-button class="ml-2" [value]="true"  class="additionalDriversTrue"><h5 translate="">YES</h5></mat-radio-button>
+      </mat-radio-group>
+    </div>
+  </div>
+
+
+  <div [hidden]="!youngestDriver?.isValid || !stepForm.controls.hasAdditionalDrivers.value">
+
+
+    <div class="row justify-content-center">
+      <i class="col-auto fa fa-plus align-self-center" (click)="addDriver()"></i>
+      <div class="col-2">
+        <input formControlName="totalExtraDrivers"  readonly type="number" class="form-control lali-form-control">
+      </div>
+      <i class="col-auto fa fa-minus align-self-center" (click)="removeDriver()"></i>
+    </div>
+
+    <div class="row">
+      <div class="col-6 animated bounceInUp" [hidden]="!shouldShowFirstYoungDriver">
+        <driver [titleKey]="'ADDITIONAL_DRIVER'"  #firstYoungDriver [key]="'firstYoungDriver'" [parentFormGroup]="stepForm" [driver]="process.isPolicyOwnerYoungestDriver ? process.firstYoungDriver : process.secondYoungDriver"  ></driver>
+      </div>
+      <div class="col-6 animated bounceInUp" [hidden]="!shouldShowSecondYoungDriver">
+        <driver  [titleKey]="'ADDITIONAL_DRIVER'"  #secondYoungDriver [key]="'secondYoungDriver'"  [parentFormGroup]="stepForm"  [driver]="process.secondYoungDriver"  ></driver>
+      </div>
+    </div>
+  </div>
+
+
+
+</form>

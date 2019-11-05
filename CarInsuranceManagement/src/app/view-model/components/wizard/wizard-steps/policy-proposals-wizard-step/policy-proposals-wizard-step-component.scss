@@ -1,0 +1,78 @@
+@import "../../../../styles/mixins";
+@import "../../../../styles/sass/_colors";
+@include inputValidation($valid, $invalid);
+
+$bluBtn: #c0d1ed;
+
+
+
+.policy-offer {
+  font-size: 24px;
+  color: $black;
+}
+
+.tabs {
+
+  .document-tab.active {
+    border-bottom: 2px solid $primary;
+    height: 48px;
+    color: $primary;
+  }
+  .document-tab {
+
+    &:hover {
+      color: $active;
+      cursor: pointer;
+    }
+    position: relative;
+    height: 46px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 46px;
+    color: $black;
+    overflow: hidden;
+    border-radius: 25px 25px 0 0;
+    box-shadow: 0 2px 4px 0 rgba(82, 97, 115, 0.2);
+    background-color: $bkgd2;
+    cursor: pointer;
+    span {
+      position: absolute;
+      font-size: 12px;
+      text-align: center;
+      line-height: 15px;
+      color: $bkgd2;
+      background-color: $success;
+      height: 16px;
+      transform: rotate(-40deg);
+    }
+  }
+}
+
+.secured{
+  font-size: 12px;
+  text-align: center;
+  line-height: 15px;
+  color: #FFFFFF;
+  background-color: #51CF66;
+  height: 16px;
+  -webkit-transform: rotate(-40deg);
+  transform: rotate(-40deg);
+  width: 90px;
+  position: absolute;
+  left: -21px;
+}
+
+.review {
+  margin-top: 33px;
+  text-align: center;
+  color: $black;
+  font-size: 12px;
+  a {
+    text-decoration: underline;
+    margin-right: 6px;
+    color: $black;
+    &:hover {
+      color: darken($black, 20%);
+    }
+  }
+}

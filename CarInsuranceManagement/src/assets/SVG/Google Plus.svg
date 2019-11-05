@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>Icon/App/Google Plus</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M22,11.0677083 L22,12.734375 L20.3333333,12.734375 L20.3333333,14.4010417 L18.6666667,14.4010417 L18.6666667,12.734375 L17,12.734375 L17,11.0677083 L18.6666667,11.0677083 L18.6666667,9.40104167 L20.3333333,9.40104167 L20.3333333,11.0677083 L22,11.0677083 Z M15.772025,11.071425 C16.4665917,15.1218833 13.9564833,19.1666667 9.08333333,19.1666667 C5.16726667,19.1666667 2,15.9994 2,12.0833333 C2,8.16726667 5.16726667,5 9.08333333,5 C10.9958167,5 12.5946333,5.69819167 13.829175,6.8518 L11.9065667,8.70355833 C11.3803417,8.197625 10.459525,7.610725 9.08333333,7.610725 C6.66486667,7.610725 4.69165,9.61430833 4.69165,12.0833333 C4.69165,14.5523583 6.66486667,16.5559417 9.08333333,16.5559417 C11.8312417,16.5559417 12.8908083,14.6258 13.0842417,13.5677083 L9.5,13.5677083 L9.5,11.0677083 L15.772025,11.071425 Z" id="path-1"></path>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icon/App/Google-Plus">
+            <rect id="Bounding-Box" x="0" y="0" width="24" height="24"></rect>
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <g id="Mask"></g>
+            <g id="Mixin/Fill/Black" mask="url(#mask-2)" fill="IconColor">
+                <rect id="Rectangle" x="0" y="0" width="24" height="24"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

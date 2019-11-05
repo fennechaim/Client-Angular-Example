@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>Icon/Checkbox - Mixed</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M2,2.83333333 C2,2.37309604 2.37309604,2 2.83333333,2 L21.1666667,2 C21.626904,2 22,2.37309604 22,2.83333333 L22,21.1666667 C22,21.626904 21.626904,22 21.1666667,22 L2.83333333,22 C2.37309604,22 2,21.626904 2,21.1666667 L2,2.83333333 Z M16,13 C16.5522847,13 17,12.5522847 17,12 C17,11.4477153 16.5522847,11 16,11 L8,11 C7.44771525,11 7,11.4477153 7,12 C7,12.5522847 7.44771525,13 8,13 L16,13 Z" id="path-1"></path>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icon/Checkbox---Mixed">
+            <rect id="Bounding-Box" x="0" y="0" width="24" height="24"></rect>
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <g id="Mask"></g>
+            <g id="Mixin/Fill/Black" opacity="0.5" mask="url(#mask-2)" fill="IconColor">
+                <rect id="Rectangle" x="0" y="0" width="24" height="24"></rect>
+            </g>
+        </g>
+        <g id="Section-Labels" transform="translate(-253.000000, -228.000000)"></g>
+    </g>
+</svg>

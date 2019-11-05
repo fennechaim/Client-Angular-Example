@@ -1,0 +1,14 @@
+<div class="row">
+  <div class="col-auto">
+    <mat-checkbox (change)="toggleSubCover(subCover)" [checked]="isIncludedInPolicy(subCover)" class="col-auto">
+      <span>{{ 'CarComprehensiveAccessoriesSubcover' | translate }}</span>
+    </mat-checkbox>
+  </div>
+  <span class="col-auto">
+    <input id="accessory" type="number" class="form-control lali-form-control" [ngModel]="carProcess.minAccessoryInsuranceSum"
+        (change)="onMinAccessoryChanged(subCover, $event.target.value)"><span translate>CURRENCY</span>
+  </span>
+  <div class="col-auto">
+    <div class="price text-center">({{subCover | policyPremium}})</div>
+  </div>
+</div>

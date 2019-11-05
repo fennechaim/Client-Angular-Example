@@ -1,0 +1,118 @@
+<div [formGroup]="carSelectionForm" class="container" [dir]="direction">
+
+  <div class="row mt-5 justify-content-center">
+    <div class="col-12 text-center">
+      <span class="car-title" translate>ENTER_CAR_DETAILS</span>
+    </div>
+  </div>
+  <div class="row mt-5 justify-content-center">
+
+    <div class="col-12 col-lg-6">
+      <div class="row">
+          <div class="col-8">
+          <input type="text"
+                 class="form-control lali-form-control"
+                 formControlName="manufacturer"
+                 placeholder="{{ 'MANUFACTURER' | translate }}"
+                 (selectItem)="onManufacturerSelected($event)"
+                 [ngbTypeahead]="manufacturersSearch"
+                 [inputFormatter]="manufacturerFormatter"
+                 [resultFormatter]="manufacturerFormatter"/>
+        </div>
+        <div class="col-4">
+          <div class="row align-items-end">
+            <div class="col-4">
+              <span class="" translate>YEAR</span>
+            </div>
+            <div class="col-8">
+              <input type="text"
+                     class="form-control lali-form-control"
+                     formControlName="year"
+                     (selectItem)="onYearSelected($event)"
+                     [ngbTypeahead]="yearsSearch"
+                     [inputFormatter]="yearFormatter"
+                     [resultFormatter]="yearFormatter"/>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="row mt-3 justify-content-center">
+      <div class="col-6">
+        <div class="row align-items-end">
+          <div class="col-2">
+            <span class="" translate>MODEL</span>
+          </div>
+          <div class="col-10">
+            <input type="text"
+                   class="form-control lali-form-control"
+                   trigger-input-on-focus
+                   formControlName="model"
+                   (selectItem)="onModelSelected($event)"
+                   [ngbTypeahead]="modelsSearch"
+                   [inputFormatter]="modelFormatter"
+                   [resultFormatter]="modelFormatter"/>
+          </div>
+        </div>
+      </div>
+  </div>
+
+
+<div class="row mt-3 justify-content-center">
+      <div class="col-6">
+        <div class="row align-items-end">
+          <div class="col-2">
+            <span class="" translate>SUB_MODEL</span>
+          </div>
+          <div class="col-10">
+            <input type="text"
+                   class="ml-4 form-control lali-form-control"
+                   trigger-input-on-focus
+                   formControlName="subDescription"
+                   (selectItem)="onSubDescriptionSelected($event)"
+                   [ngbTypeahead]="subDescriptionSearch"
+                   [inputFormatter]="subDescriptionFormatter"
+                   [resultFormatter]="subDescriptionFormatter"/>
+          </div>
+        </div>
+      </div>
+  </div>
+
+
+
+
+
+
+  <div class="row mt-3 mb-3 justify-content-center" *ngIf="isDriverAssistanceSystemMissing()">
+    <div class="col-8 text-center">
+        <span translate>DRIVER_ASSISTANCE_SYSTEMS_NOT_FOUND</span>
+    </div>
+
+    <div class="col-12 mt-3">
+      <div class="row justify-content-center mt-3" *ngIf="isMissingLdwSystem()">
+        <mat-checkbox  formControlName="hasLdwSystem" class="col-auto"><span translate>LDW_SYSTEM</span></mat-checkbox>
+        <mat-select class="col-3" placeholder="LWD System" formControlName="ldwSystem">
+          <mat-option *ngFor="let ldwSystem of ldwSystems" [value]="ldwSystem">
+            {{ ldwSystem.name | translate }}
+          </mat-option>
+        </mat-select>
+      </div>
+
+      <div class="row justify-content-center mt-3" *ngIf="isMissingFcwSystem()">
+        <mat-checkbox formControlName="hasFcwSystem" class="col-auto"><span translate>FCW_SYSTEM</span></mat-checkbox>
+        <mat-select class="col-3" placeholder="FCW System" formControlName="fcwSystem">
+          <mat-option *ngFor="let fcwSystem of fcwSystems" [value]="fcwSystem">
+            {{ fcwSystem.name | translate }}
+          </mat-option>
+        </mat-select>
+      </div>
+
+    </div>
+  </div>
+  <div class="row mt-3 mb-3 justify-content-center">
+    <button class="btn btn-success btn-fix" translate="" [disabled]="!carSelectionForm.valid" (click)="selectCar(carSelectionForm)">I_FIXED_IT</button>
+  </div>
+</div>

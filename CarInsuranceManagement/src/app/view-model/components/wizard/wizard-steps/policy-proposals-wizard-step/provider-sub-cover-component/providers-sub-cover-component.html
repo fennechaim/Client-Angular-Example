@@ -1,0 +1,21 @@
+<div class="row" aria-hidden="true">
+  <div class="col-auto" *ngIf="!isToggleEnabled">
+    <span class="fa fa-check lali-primary-color ml-2 mr-2"></span>
+    <span class="text">{{ subCover.name | translate }}</span>
+  </div>
+
+
+  <div class="col-auto" *ngIf="isToggleEnabled" (click)="toggleSubCover(subCover)">
+    <mat-checkbox [checked]="isIncludedInPolicy(subCover)" class="col-auto"><span>{{ subCover.name | translate }}</span></mat-checkbox>
+  </div>
+
+  <div class="col-auto ml-1 mr-1">
+    <mat-select [(ngModel)]="carProcess.selectedComprehensiveDrugsSubCoverProvider.id" (change)="updateProperty(subCover, $event.value)">
+      <mat-option *ngFor="let option of providers" [value]="option.id">{{option.name | translate}}</mat-option>
+    </mat-select>
+  </div>
+  <div class="col-auto ml-2 mr-2">
+    <div class="price text-center">({{subCover | policyPremium}})</div>
+  </div>
+
+</div>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>Icon/Equals</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M4,14 L20,14 L20,16 L4,16 L4,14 Z M4,8 L20,8 L20,10 L4,10 L4,8 Z" id="path-1"></path>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icon/Equals">
+            <rect id="Bounding-Box" x="0" y="0" width="24" height="24"></rect>
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <g id="Combined-Shape"></g>
+            <g id="Mixin/Fill/Black" mask="url(#mask-2)" fill="IconColor">
+                <rect id="Rectangle" x="0" y="0" width="24" height="24"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

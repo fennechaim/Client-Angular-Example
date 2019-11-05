@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="9e096aed-8081-461b-bb3c-d28b629888d0" name="Default" comment="" />
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/CarInsuranceManagement/node_modules" />
+    <handled-path value="$PROJECT_DIR$/HomeInsuranceManagement/node_modules" />
+    <handled-path value="$PROJECT_DIR$/PersonalAccidentsManagement/node_modules" />
+    <handled-path value="$PROJECT_DIR$/TravelInsuranceManagement/node_modules" />
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="1920" />
+    <option name="y" value="24" />
+    <option name="width" value="1920" />
+    <option name="height" value="1056" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TruckInsuranceManagmnent" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/MotorcycleInsuranceManagement" />
+    <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
+    <property name="js.eslint.eslintPackage" value="" />
+    <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="1920" y="24" width="1920" height="1056" extended-state="6" />
+    <editor active="false" />
+    <layout>
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24986821" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="processedProjectFiles" value="true" />
+    <option name="exactExcludedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/PersonalAccidentsManagement/src/app/policyProposalWizard/wizardSteps/policy-price-document-step/price-document/add-sub-cover/add-sub-cover.component.js" />
+        <option value="$PROJECT_DIR$/PersonalAccidentsManagement/src/app/shared/services/backend.service.js" />
+        <option value="$PROJECT_DIR$/PersonalAccidentsManagement/src/app/shared/models/process.model.js" />
+        <option value="$PROJECT_DIR$/PersonalAccidentsManagement/src/app/shared/services/request-executor-service.js" />
+        <option value="$PROJECT_DIR$/HomeInsuranceManagement/src/app/shared/services/request-executor.service.js" />
+        <option value="$PROJECT_DIR$/CarInsuranceManagement/src/environments/environment.js" />
+        <option value="$PROJECT_DIR$/CarInsuranceManagement/src/app/dummy/dummy.component.js" />
+        <option value="$PROJECT_DIR$/CarInsuranceManagement/src/app/data/wizard-first-step-data.js" />
+        <option value="$PROJECT_DIR$/CarInsuranceManagement/src/app/data/general-data-form.js" />
+        <option value="$PROJECT_DIR$/CarInsuranceManagement/src/app/data/wizard-second-step-data.js" />
+        <option value="$PROJECT_DIR$/HomeInsuranceManagement/src/environments/environment.js" />
+        <option value="$PROJECT_DIR$/HomeInsuranceManagement/src/app/header/header.component.js" />
+        <option value="$PROJECT_DIR$/HomeInsuranceManagement/src/app/dummy/dummy.component.js" />
+        <option value="$PROJECT_DIR$/TruckInsuranceManagmnent/node_modules/karma/config.tpl.js" />
+        <option value="$PROJECT_DIR$/TruckInsuranceManagmnent/node_modules/tslint/scripts/buildDocs.js" />
+        <option value="$PROJECT_DIR$/TruckInsuranceManagmnent/node_modules/angular-cli/node_modules/tslint/scripts/buildDocs.js" />
+        <option value="$PROJECT_DIR$/TruckInsuranceManagmnent/node_modules/angular-cli/node_modules/tsickle/test_files/enum/enum.js" />
+        <option value="$PROJECT_DIR$/TruckInsuranceManagmnent/node_modules/angular-cli/node_modules/tsickle/test_files/type/type.js" />
+        <option value="$PROJECT_DIR$/TruckInsuranceManagmnent/node_modules/angular-cli/node_modules/tsickle/test_files/jsdoc/jsdoc.js" />
+        <option value="$PROJECT_DIR$/TruckInsuranceManagmnent/node_modules/angular-cli/node_modules/tsickle/test_files/super/super.js" />
+        <option value="$PROJECT_DIR$/TruckInsuranceManagmnent/node_modules/angular-cli/node_modules/tsickle/test_files/coerce/coerce.js" />
+        <option value="$PROJECT_DIR$/TruckInsuranceManagmnent/node_modules/angular-cli/node_modules/tsickle/test_files/export/export.js" />
+        <option value="$PROJECT_DIR$/TruckInsuranceManagmnent/node_modules/angular-cli/node_modules/tsickle/test_files/export/export_helper.js" />
+        <option value="$PROJECT_DIR$/TruckInsuranceManagmnent/node_modules/angular-cli/node_modules/tsickle/test_files/export/export_helper_2.js" />
+        <option value="$PROJECT_DIR$/TruckInsuranceManagmnent/node_modules/angular-cli/node_modules/tsickle/test_files/fields/fields.js" />
+        <option value="$PROJECT_DIR$/TruckInsuranceManagmnent/node_modules/angular-cli/node_modules/tsickle/test_files/static/static.js" />
+        <option value="$PROJECT_DIR$/TruckInsuranceManagmnent/node_modules/angular-cli/node_modules/tsickle/test_files/declare/declare.js" />
+        <option value="$PROJECT_DIR$/TruckInsuranceManagmnent/node_modules/angular-cli/node_modules/tsickle/test_files/default/default.js" />
+        <option value="$PROJECT_DIR$/TruckInsuranceManagmnent/node_modules/angular-cli/node_modules/tsickle/test_files/typedef/typedef.js" />
+        <option value="$PROJECT_DIR$/TruckInsuranceManagmnent/node_modules/angular-cli/node_modules/tsickle/test_files/abstract/abstract.js" />
+        <option value="$PROJECT_DIR$/TruckInsuranceManagmnent/node_modules/angular-cli/node_modules/tsickle/test_files/arrow_fn/arrow_fn.js" />
+        <option value="$PROJECT_DIR$/TruckInsuranceManagmnent/node_modules/angular-cli/node_modules/tsickle/test_files/comments/comments.js" />
+        <option value="$PROJECT_DIR$/TruckInsuranceManagmnent/node_modules/angular-cli/node_modules/tsickle/test_files/optional/optional.js" />
+        <option value="$PROJECT_DIR$/TruckInsuranceManagmnent/node_modules/angular-cli/node_modules/tsickle/test_files/decorator/decorator.js" />
+        <option value="$PROJECT_DIR$/TruckInsuranceManagmnent/node_modules/angular-cli/node_modules/tsickle/test_files/functions/functions.js" />
+        <option value="$PROJECT_DIR$/TruckInsuranceManagmnent/node_modules/angular-cli/node_modules/tsickle/test_files/interface/interface.js" />
+        <option value="$PROJECT_DIR$/TruckInsuranceManagmnent/node_modules/angular-cli/node_modules/tsickle/test_files/variables/variables.js" />
+        <option value="$PROJECT_DIR$/TruckInsuranceManagmnent/node_modules/angular-cli/node_modules/tsickle/test_files/underscore/export_underscore.js" />
+        <option value="$PROJECT_DIR$/TruckInsuranceManagmnent/node_modules/angular-cli/node_modules/tsickle/test_files/underscore/underscore.js" />
+        <option value="$PROJECT_DIR$/TruckInsuranceManagmnent/node_modules/angular-cli/node_modules/tsickle/test_files/jsdoc_types/jsdoc_types.js" />
+        <option value="$PROJECT_DIR$/TruckInsuranceManagmnent/node_modules/angular-cli/node_modules/tsickle/test_files/jsdoc_types/module2.js" />
+        <option value="$PROJECT_DIR$/TruckInsuranceManagmnent/node_modules/angular-cli/node_modules/tsickle/test_files/jsdoc_types/nevertyped.js" />
+        <option value="$PROJECT_DIR$/TruckInsuranceManagmnent/node_modules/angular-cli/node_modules/tsickle/test_files/jsdoc_types/module1.js" />
+        <option value="$PROJECT_DIR$/TruckInsuranceManagmnent/node_modules/angular-cli/node_modules/tsickle/test_files/jsdoc_types/default.js" />
+        <option value="$PROJECT_DIR$/TruckInsuranceManagmnent/node_modules/angular-cli/node_modules/tsickle/test_files/enum.untyped/enum.untyped.js" />
+        <option value="$PROJECT_DIR$/TruckInsuranceManagmnent/node_modules/angular-cli/node_modules/tsickle/test_files/file_comment/file_comment.js" />
+        <option value="$PROJECT_DIR$/TruckInsuranceManagmnent/node_modules/angular-cli/node_modules/tsickle/test_files/basic.untyped/basic.untyped.js" />
+        <option value="$PROJECT_DIR$/TruckInsuranceManagmnent/node_modules/angular-cli/node_modules/tsickle/test_files/fields_no_ctor/fields_no_ctor.js" />
+        <option value="$PROJECT_DIR$/TruckInsuranceManagmnent/node_modules/angular-cli/node_modules/tsickle/test_files/type_and_value/module.js" />
+        <option value="$PROJECT_DIR$/TruckInsuranceManagmnent/node_modules/angular-cli/node_modules/tsickle/test_files/type_and_value/type_and_value.js" />
+        <option value="$PROJECT_DIR$/TruckInsuranceManagmnent/node_modules/angular-cli/node_modules/tsickle/test_files/typedef.untyped/typedef.untyped.js" />
+        <option value="$PROJECT_DIR$/TruckInsuranceManagmnent/node_modules/angular-cli/node_modules/tsickle/test_files/arrow_fn.untyped/arrow_fn.untyped.js" />
+        <option value="$PROJECT_DIR$/TruckInsuranceManagmnent/node_modules/angular-cli/node_modules/tsickle/test_files/declare_class_ns/declare_class_ns.js" />
+        <option value="$PROJECT_DIR$/TruckInsuranceManagmnent/node_modules/angular-cli/node_modules/tsickle/test_files/functions.untyped/functions.js" />
+        <option value="$PROJECT_DIR$/TruckInsuranceManagmnent/node_modules/angular-cli/node_modules/tsickle/test_files/structural.untyped/structural.untyped.js" />
+        <option value="$PROJECT_DIR$/TruckInsuranceManagmnent/node_modules/angular-cli/node_modules/tsickle/test_files/jsdoc_types.untyped/jsdoc_types.js" />
+        <option value="$PROJECT_DIR$/TruckInsuranceManagmnent/node_modules/angular-cli/node_modules/tsickle/test_files/jsdoc_types.untyped/module2.js" />
+        <option value="$PROJECT_DIR$/TruckInsuranceManagmnent/node_modules/angular-cli/node_modules/tsickle/test_files/jsdoc_types.untyped/nevertyped.js" />
+        <option value="$PROJECT_DIR$/TruckInsuranceManagmnent/node_modules/angular-cli/node_modules/tsickle/test_files/jsdoc_types.untyped/module1.js" />
+        <option value="$PROJECT_DIR$/TruckInsuranceManagmnent/node_modules/angular-cli/node_modules/tsickle/test_files/jsdoc_types.untyped/default.js" />
+        <option value="$PROJECT_DIR$/TruckInsuranceManagmnent/node_modules/angular-cli/node_modules/tsickle/test_files/parameter_properties/parameter_properties.js" />
+        <option value="$PROJECT_DIR$/TruckInsuranceManagmnent/node_modules/angular2-busy/index.js" />
+        <option value="$PROJECT_DIR$/TruckInsuranceManagmnent/node_modules/angular2-busy/index.js.map" />
+        <option value="$PROJECT_DIR$/TruckInsuranceManagmnent/node_modules/angular2-logger/app/core/logger.js" />
+        <option value="$PROJECT_DIR$/TruckInsuranceManagmnent/node_modules/angular2-logger/app/core/logger.js.map" />
+        <option value="$PROJECT_DIR$/TruckInsuranceManagmnent/node_modules/angular2-logger/app/core/level.js" />
+        <option value="$PROJECT_DIR$/TruckInsuranceManagmnent/node_modules/angular2-logger/app/core/level.js.map" />
+        <option value="$PROJECT_DIR$/TruckInsuranceManagmnent/node_modules/angular2-logger/app/core/providers.js" />
+        <option value="$PROJECT_DIR$/TruckInsuranceManagmnent/node_modules/angular2-logger/app/core/providers.js.map" />
+        <option value="$PROJECT_DIR$/TruckInsuranceManagmnent/node_modules/reflect-metadata/Reflect.js" />
+        <option value="$PROJECT_DIR$/TruckInsuranceManagmnent/node_modules/reflect-metadata/Reflect.js.map" />
+        <option value="$PROJECT_DIR$/TruckInsuranceManagmnent/node_modules/awesome-typescript-loader/src/test/fixtures/babel/babel.js" />
+        <option value="$PROJECT_DIR$/TruckInsuranceManagmnent/node_modules/awesome-typescript-loader/src/test/fixtures/basic/basic.js" />
+        <option value="$PROJECT_DIR$/TruckInsuranceManagmnent/node_modules/awesome-typescript-loader/src/test/fixtures/salsa/index.js" />
+        <option value="$PROJECT_DIR$/TruckInsuranceManagmnent/node_modules/angular-cli/node_modules/tsickle/test_files/jsx/jsx.js" />
+      </list>
+    </option>
+    <option name="configsExcludedFiles">
+      <set>
+        <option value="$PROJECT_DIR$/CarInsuranceManagement/dist/out-tsc" />
+        <option value="$PROJECT_DIR$/HomeInsuranceManagement/dist/out-tsc" />
+        <option value="$PROJECT_DIR$/PersonalAccidentsManagement/dist/out-tsc" />
+        <option value="$PROJECT_DIR$/TravelInsuranceManagement/dist/out-tsc" />
+        <option value="$PROJECT_DIR$/TruckInsuranceManagmnent/dist/out-tsc" />
+      </set>
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+</project>

@@ -1,0 +1,18 @@
+<div bsModal #documentDisplayModal="bs-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" [config]="{backdrop: 'static', keyboard: 'true' }">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-body">
+        <div class="iconHeader">
+          <div translate>POLICY_DOCUMENT</div>
+        </div>
+        <div *ngIf="fileBytes == ''">Loading...</div>
+        <div class="iframeHolder" *ngIf="fileBytes != ''">
+          <iframe [src]="'data:application/pdf;base64,' + getFileBytes | safe" height="100%" width="100%"></iframe>
+          <button class="cancelModalButton" (click)="cancelModal()" translate>CLOSE</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+

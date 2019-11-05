@@ -1,0 +1,50 @@
+
+import {Component, Inject, OnInit} from "@angular/core";
+import {Policy} from "client-infrastructure/src/domain-model/entities/policies/policy";
+import {AbstractPolicySubCoverComponent} from "client-infrastructure/src/view-model/components/policies/proposals/abstract-policy-sub-cover.component";
+import {ISubCoverToggler} from "client-infrastructure/src/domain-model/services/policies/isub-cover-toggler";
+import {ISubCoverPropertyUpdater} from "client-infrastructure/src/domain-model/services/policies/isub-cover-property-updater";
+import {SubCoverProperty} from "client-infrastructure/src/domain-model/entities/policies/sub-cover-property";
+import {CarInsuranceProcess} from "../../../../../../domain-model/entities/process/car-insurance-process";
+import {BehaviorSubject} from "rxjs";
+import {Lookable} from "client-infrastructure/src/domain-model/entities/lookable/lookable";
+import {CAR_PRICE_TYPES} from "../../../../../../domain-model/entities/car/car-price-types";
+
+@Component({
+  selector: "car-theft-sub-cover",
+  templateUrl: "./car-theft-sub-cover.component.html",
+  styleUrls: ["./car-theft-sub-cover.component.scss"]
+})
+
+export class CarTheftSubCoverComponent  extends AbstractPolicySubCoverComponent implements OnInit {
+
+  constructor(@Inject('subCoverToggler')protected  subCoverToggler:ISubCoverToggler,
+              @Inject('subCoverPropertyUpdater') private subCoverPropertyUpdater: ISubCoverPropertyUpdater){
+    super(subCoverToggler);
+  }
+
+  carPriceTypes:BehaviorSubject<Lookable[]>;
+
+  get carProcess():CarInsuranceProcess{
+    return this.process as CarInsuranceProcess;
+  }
+
+  ngOnInit(): void {
+
+    this.carPriceTypes = new BehaviorSubject(CAR_PRICE_TYPES);
+  }
+
+  onPriceTypeChanged(subCover: Policy,value:number){
+    let property = new SubCoverProperty({
+      name:'CarPriceType',
+      value:value
+    });
+
+
+    console.log('updating property', property);
+    this.subCoverPropertyUpdater.updateProperty(this.policy, subCover, property).subscribe((p:Policy) => {
+      console.log('updated property', property);
+    });
+
+  }
+}

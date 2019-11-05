@@ -1,0 +1,40 @@
+/* You can add global styles to this file, and also import other style files
+@import "./app/shared/sass/colors";
+@import "./app/shared/sass/mixins";
+*/
+
+
+body {
+  direction: rtl;
+  // font-family: 'Open Sans Hebrew Light';
+}
+progress.progress{
+  width: 100%;
+}
+
+.modal-content{
+  top:100px;
+}
+
+body {
+  direction: rtl; 
+  padding-bottom: 100px; 
+  }
+
+//hack since material is not working well with bootstrap modal
+.cdk-overlay-container {
+  z-index:2000 !important;
+}
+
+
+.modal-content {
+  padding-bottom: 40px;
+}
+
+.checkboxLabel {
+  background-position: center;
+}
+
+.car-selection {
+  overflow-y: hidden;
+}

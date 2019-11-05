@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>Icon/Phone</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M15,19.0005 C9.486,19.0005 5,14.5155 5,9.0005 L5,4.0005 L9,4.0005 L9,8.0005 L8,8.0005 C7.732,8.0005 7.475,8.1075 7.287,8.2985 C7.099,8.4905 6.996,8.7485 7,9.0165 C7.072,13.5675 10.512,17.0005 15,17.0005 C15.552,17.0005 16,16.5525 16,16.0005 L16,15.0005 L20,15.0005 L20.001,19.0005 L15,19.0005 Z M20,13.0005 L16,13.0005 C14.923,13.0005 14.042,13.8555 14.001,14.9225 C11.459,14.5185 9.529,12.5825 9.092,9.9985 C10.152,9.9505 11,9.0735 11,8.0005 L11,4.0005 C11,2.8975 10.103,2.0005 9,2.0005 L5,2.0005 C3.897,2.0005 3,2.8975 3,4.0005 L3,9.0005 C3,15.6175 8.383,21.0005 15,21.0005 L20,21.0005 C21.103,21.0005 22,20.1035 22,19.0005 L22,15.0005 C22,13.8975 21.103,13.0005 20,13.0005 L20,13.0005 Z" id="path-1"></path>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icon/Phone">
+            <rect id="Bounding-Box" x="0" y="0" width="24" height="24"></rect>
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="Fill-347" fill="IconColor" xlink:href="#path-1"></use>
+            <g id="Mixin/Fill/Black" mask="url(#mask-2)" fill="IconColor">
+                <rect id="Rectangle" x="0" y="0" width="24" height="24"></rect>
+            </g>
+            <g id="Page-1" mask="url(#mask-2)">
+                <g transform="translate(-13.000000, -8.000000)"></g>
+            </g>
+        </g>
+    </g>
+</svg>

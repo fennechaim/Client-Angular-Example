@@ -1,0 +1,16 @@
+<form [formGroup]="stepForm" class="container">
+  <div class="row justify-content-center">
+
+    <policy-proposals class="col-12"
+                      (acceptOfferRequested)="acceptOffer($event)"
+                      [policyOwnerFirstName]="firstName"
+                      [process]="process"
+                      [policies]="policies"  ></policy-proposals>
+
+    <div class="col-12">
+      <div class="review">
+        <label>{{ 'REVIEW' | translate }}<a href="#"> {{ 'POLICY_FULL_DETAILS' | translate }}</a></label>
+      </div>
+    </div>
+  </div>
+</form>

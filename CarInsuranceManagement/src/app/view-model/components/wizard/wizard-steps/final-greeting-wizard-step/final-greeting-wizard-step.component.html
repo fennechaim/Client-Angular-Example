@@ -1,0 +1,63 @@
+<div [formGroup]="stepForm" class="container">
+  <div class="row justify-content-center">
+    <div class="col-auto">
+      <div class="icn_cfe-blk coffee-icon-size"></div>
+    </div>
+  </div>
+
+  <div class="row justify-content-center">
+    <div class="col-6 mt-3">
+      <h5 class="text-center" translate>COFFEE_ICON_LABEL</h5>
+    </div>
+  </div>
+
+  <div class="row justify-content-center mt-4">
+    <div class="col-8">
+      <h3 class="text-center"><span translate>FINAL_GREETING_1</span> {{firstName}}, <span> {{ 'FINAL_GREETING_2' | translate }}!</span></h3>
+      <h3 class="text-center"><span translate>EMAIL_CONFIRMATION_STATEMENT</span></h3>
+    </div>
+  </div>
+
+  <div class="row justify-content-center mt-3">
+    <div class="col-6">
+      <div class="row justify-content-between mt-4">
+
+        <div class="col-5">
+          <button (click)="goToInsuranceAccount()" class="btn btn-primary designButton  scn oval icn_lock_wteIcn leftIcon pl-5" translate>INSURANCE_ACCOUNT_ENTRY</button>
+        </div>
+        <div class="col-5">
+          <button class="btn btn-primary designButton  prm oval icn_doc_wteIcn leftIcon pl-5" translate>POLICY_DOCUMENT_LOOKUP</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="row justify-content-center mt-4">
+    <div class="col-8" style="max-height:150px;overflow-y:auto">
+      <div class="row">
+        <div class="col-12">
+          <div class="row">
+            <div class="col-auto">
+              <mat-checkbox [checked]="isNotificationChecked" class="col-auto"><span>{{ 'EMAIL_DECLARATION_1_FIRST_PART' | translate }}</span></mat-checkbox>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-12">
+              <span translate>EMAIL_DECLARATION_1_SECOND_PART</span>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-12">
+              <div class="declarationQuestionPart2" translate>EMAIL_DECLARATION_2</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

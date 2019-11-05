@@ -1,0 +1,43 @@
+<div class="row">
+  <div class="col-12">
+    <div class="row subCover">
+      <div class="col-12" (click)="toggleVisibility()">
+        <div class="row justify-content-between align-items-center">
+          <div class="col-auto mr-2">
+            <span class="title">{{ title | translate }}</span>
+          </div>
+          <div class="col-auto ml-2">
+            <i class="fa" [ngClass]="isVisible ? 'fa-arrow-down' : 'fa-arrow-left'"></i>
+          </div>
+        </div>
+      </div>
+      <div class="col-12">
+        <div class="row" [ngClass]="{'animated fadeIn': isVisible}"
+             [hidden]="!isVisible">
+          <div class="col-12">
+            <div class="row subCoverDynamic" *ngFor="let subCover of subCovers">
+              <div class="col-12" [ngSwitch]="subCover.name">
+                <div class="row" *ngSwitchDefault aria-hidden="true">
+
+                  <div class="col-auto" *ngIf="!toggleEnabled">
+                    <span class="fa fa-check lali-primary-color ml-2 mr-2"></span>
+                    <span class="text">{{ subCover.name | translate }}</span>
+                  </div>
+
+
+                  <div class="col-auto" *ngIf="toggleEnabled" (click)="toggleSubCover(subCover)">
+                    <i class="fa lali-primary-color ml-2 mr-2"
+                       [ngClass]="{'fa-plus': isExcludedFromPolicy(subCover), 'fa-minus': isIncludedInPolicy(subCover)}"></i>
+                    <span class="text">{{subCover.name | translate}}</span>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

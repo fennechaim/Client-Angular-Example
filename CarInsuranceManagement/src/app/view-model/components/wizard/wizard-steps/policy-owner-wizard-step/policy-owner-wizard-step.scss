@@ -1,0 +1,28 @@
+@import "../../../../styles/mixins";
+@include inputValidation($valid, $invalid);
+
+.greetings{
+
+  margin-bottom: 31px;
+}
+
+.BasicDetailsForm{
+  text-align:center;
+
+  .input-border-bottom{
+    width: 320px;
+    height: 31px;
+
+
+  }
+  .FullNameInput{
+    .InputContainer{
+      margin-bottom:32px;
+    }
+  }
+}
+
+button.designButton.wide-med:before{
+  background-size: 45% auto;
+  background-position: left -5px center;
+}

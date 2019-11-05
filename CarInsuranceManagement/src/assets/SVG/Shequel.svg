@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>Icon/Shequel</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M15.0731707,18.8156098 C19.4200976,18.8156098 21,16.7966829 21,13.2411707 L21,4.63687805 L18.4091707,4.63687805 L18.4091707,13.0216585 C18.4091707,15.3034146 17.4444878,16.4472195 15.0731707,16.4472195 L10.6829268,16.4472195 L10.6829268,9.07043902 L8.09209756,9.07043902 L8.09209756,18.8156098 L15.0731707,18.8156098 Z M9.98107317,4.63687805 C14.2840976,4.63687805 15.9079024,6.69912195 15.9079024,10.2113171 L15.9079024,14.4253659 L13.3170732,14.4253659 L13.3170732,10.4308293 C13.3170732,8.14907317 12.3523902,6.96195122 9.98107317,6.96195122 L5.59082927,6.96195122 L5.59082927,18.7722927 L3,18.7722927 L3,4.63687805 L9.98107317,4.63687805 Z" id="path-1"></path>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icon/Shequel">
+            <rect id="Bounding-Box" x="0" y="0" width="24" height="24"></rect>
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="shekel" fill="IconColor" xlink:href="#path-1"></use>
+            <g id="Mixin/Fill/Black" mask="url(#mask-2)" fill="IconColor">
+                <rect id="Rectangle" x="0" y="0" width="24" height="24"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

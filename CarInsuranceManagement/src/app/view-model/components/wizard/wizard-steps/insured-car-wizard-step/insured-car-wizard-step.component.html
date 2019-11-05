@@ -1,0 +1,35 @@
+<form [formGroup]="stepForm" class="container mt-5">
+  <div formGroupName="car" class="row justify-content-center">
+      <div class="col-12 col-lg-8">
+        <div class="row justify-content-center align-items-center">
+          <div class="col-auto align-items-end">
+            <label class="row text-left ml-1" translate>CAR_OWNERSHIP</label>
+          </div>
+          <div class="ml-3 col-6 col-lg-4">
+            <mat-select formControlName="carOwnerType">
+              <mat-option *ngFor="let item of ownerships | async" [value]="item">
+                {{item.name | translate}}
+              </mat-option>
+            </mat-select>
+          </div>
+        </div>
+      </div>
+      <div class="ml-3 col-12 col-lg-8 mt-3">
+       <div class="row justify-content-center align-items-center">
+         <div class="col-auto align-items-end ml-1">
+           <label translate>CAR_USAGE</label>
+         </div>
+         <div class="col-6 col-lg-4">
+           <mat-select formControlName="carUsageType">
+             <mat-option *ngFor="let item of usages | async" [value]="item">
+               {{item.name | translate}}
+             </mat-option>
+           </mat-select>
+         </div>
+       </div>
+      </div>
+  </div>
+  <div class="row justify-content-center" >
+    <policy-owner-contact-details  class="col-12 col-lg-8" #contactDetails [policyOwner]="process.policyOwner"></policy-owner-contact-details>
+  </div>
+</form>

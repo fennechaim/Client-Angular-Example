@@ -1,0 +1,119 @@
+@import "../../../../../../styles/sass/_colors";
+@import "../../../../../../styles/sass/_mixins";
+
+
+.price {
+  color: $primary;
+  font-family: "Open Sans Hebrew Condensed";
+  font-size: 36px;
+}
+
+.subCover {
+  //width: 600px;
+  min-height: 48px;
+  //margin: 0 auto;
+  //margin-top: 28px;
+  //padding-right: 20px;
+  border: 1px solid $secondary;
+  border-radius: 3px;
+  box-sizing: border-box;
+  //position: relative;
+  //text-align: right;
+  &:hover {
+    border-color: $active;
+    cursor: pointer;
+  }
+  &:hover > h3 {
+    color: $active;
+  }
+  h3 {
+    font-family: 'Open Sans Hebrew Condensed';
+    color: $secondary;
+    font-size: 20px;
+    margin: 0;
+    margin-top: 13px;
+  }
+  .arrow {
+    position: absolute;
+    top: 0;
+    left: 24px;
+    line-height: 48px;
+    color: $secondary;
+  }
+  div.container {
+    padding-right: 0;
+    margin-bottom: 30px;
+    font-family: 'Open Sans Hebrew Bold';
+    color: $black;
+    div.row {
+      font-size: 14px;
+      height: 20px;
+      margin-top: 28px;
+      list-style: none;
+      padding-right: 5px;
+      span {
+        display: inline-block;
+        margin-left: 5px;
+        color: $active;
+
+      }
+
+
+    }
+    li.subCoverDynamic {
+      &:hover {
+        color: $active;
+      }
+    }
+  }
+
+}
+
+.text{
+  font-family: 'Open Sans Hebrew Bold';
+  color: $black;
+  font-size: 14px;
+}
+
+.lali-primary-color{
+  color:$primary;
+}
+.lali-secondary-color{
+  color:$secondary;
+}
+.input-form{
+  // width:70px;
+  //display:inline;
+}
+
+.input-form-wide{
+  //width:100px;
+  //display:inline;
+}
+
+
+.border{
+  border:1px solid pink;
+}
+
+.submit {
+  //margin: 51px auto 35px auto;
+  width: 116px;
+  height: 43px;
+  color: $bkgd2;
+  font-size: 16px;
+  background-color: $secondary;
+  border: none;
+  font-family: 'Open Sans Hebrew Bold';
+  border-radius: 30px;
+  @include transitionSupport(background-color, .2s, ease-in-out);
+  &:hover {
+    background-color: $primary;
+  }
+}
+
+.title{
+  font-family: 'Open Sans Hebrew Condensed';
+  color: #113F67;
+  font-size: 20px;
+}

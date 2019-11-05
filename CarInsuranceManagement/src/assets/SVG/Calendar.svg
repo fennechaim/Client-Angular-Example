@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>Icon/Calendar</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M19.2,5 L18.3,5 L18.3,2 L16.5,2 L16.5,7 L15.6,7 L15.6,5 L9.3,5 L9.3,2 L7.5,2 L7.5,7 L6.6,7 L6.6,5 L4.8,5 C3.8073,5 3,5.898 3,7 L3,20 C3,21.103 3.8073,22 4.8,22 L19.2,22 C20.1927,22 21,21.103 21,20 L21,7 C21,5.898 20.1927,5 19.2,5 Z M19.1973,20 L4.8,20 L4.8,9 L19.2,9 L19.1973,20 Z" id="path-1"></path>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icon/Calendar">
+            <rect id="Bounding-Box" x="0" y="0" width="24" height="24"></rect>
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <g id="Mask"></g>
+            <g id="Mixin/Fill/Black" mask="url(#mask-2)" fill="IconColor">
+                <rect id="Rectangle" x="0" y="0" width="24" height="24"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

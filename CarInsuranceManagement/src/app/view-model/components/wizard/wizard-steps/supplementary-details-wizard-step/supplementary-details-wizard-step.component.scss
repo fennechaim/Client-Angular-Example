@@ -1,0 +1,17 @@
+@import "../../../../styles/mixins";
+@include inputValidation($valid, $invalid);
+
+
+.EssentialInformationDocumentLink{
+ font-size: 20px;
+}
+
+
+.declarationQuestion {
+    vertical-align: top;
+}
+
+
+mat-checkbox /deep/ .mat-checkbox-inner-container {
+    margin-top: 2px;
+}

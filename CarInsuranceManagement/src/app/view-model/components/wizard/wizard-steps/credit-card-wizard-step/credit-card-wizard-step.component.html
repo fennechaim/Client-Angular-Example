@@ -1,0 +1,8 @@
+<div [formGroup]="stepForm" class="container">
+  <div class="row justify-content-center">
+    <h2 class="col-auto" translate>PAYMENT_FILL_MSG</h2>
+  </div>
+  <div class="creditCard row mt-5 justify-content-center">
+      <iframe id="creditGuardFrame" width="100%" height="500" [attr.src]="process.paymentUrl| safe"></iframe>
+  </div>
+</div>

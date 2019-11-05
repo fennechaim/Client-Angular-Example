@@ -1,0 +1,24 @@
+@import "../../../../styles/mixins";
+@include inputValidation($valid, $invalid);
+
+
+.foo{
+
+}
+.car-selection{
+  padding-bottom: 40px;
+  top:40%;
+}
+.modal-content{
+  top:200px !important;
+}
+
+.car-title{
+  font-size: 24px;
+  line-height: 36px;
+}
+
+.btn-fix {
+  margin-top: 30px;
+}
+

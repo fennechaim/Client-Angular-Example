@@ -1,0 +1,8 @@
+<div class="row">
+  <div class="col-auto" *ngIf="isToggleEnabled" (click)="toggleCompulsory()">
+    <mat-checkbox [checked]="isCompulsoryIncluded()" class="col-auto"><span>{{ 'COMPULSORY_SUB_COVER' | translate }}</span></mat-checkbox>
+  </div>
+  <div class="col-auto ml-2 mr-2">
+    <div class="price text-center">({{subCover | policyPremium}})</div>
+  </div>
+</div>

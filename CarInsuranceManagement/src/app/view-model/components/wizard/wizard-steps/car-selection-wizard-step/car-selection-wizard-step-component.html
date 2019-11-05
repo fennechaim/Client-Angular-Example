@@ -1,0 +1,22 @@
+<form [formGroup]="stepForm" class="row">
+  <div formGroupName="car">
+    <div class="LicenseNumQuestionHolder">
+      <h2><span>{{ 'FIRST_TIME_GREETING' | translate }}</span>{{ firstName }}<br /><span>{{ 'LICENSE_NUM_QUESTION' | translate }}</span></h2>
+      <div class="licenseNum" formGroupName="licenseNumber" dir="ltr">
+        <input maxlength="2" formControlName="thirdPart" class="input-border-bottom requiredInput">
+        <input maxlength="3" formControlName="secondPart" class="input-border-bottom requiredInput">
+        <input maxlength="2" formControlName="firstPart" class="input-border-bottom requiredInput">
+      </div>
+    </div>
+    <div class="cantRememberButtonContainer">
+      <button name="carSelection" (click)="selectCar()" class="designButton wide-lrg wte font-scn oval" translate> I_CANT_REMEMBER </button>
+
+    </div>
+    <input type="hidden" formControlName="manufacturer"/>
+    <input type="hidden" formControlName="model"/>
+    <input type="hidden" formControlName="year"/>
+    <input type="hidden" formControlName="subDescription"/>
+  </div>
+  <template ngbModalContainer></template>
+
+</form>

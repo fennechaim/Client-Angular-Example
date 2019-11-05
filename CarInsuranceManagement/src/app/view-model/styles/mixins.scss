@@ -1,0 +1,17 @@
+$valid: #00a51b;
+$invalid: #c60118;
+@mixin inputValidation ($valid, $invalid) {
+    input.ng-invalid.ng-touched {
+     //border: 1px solid $invalid;
+    }
+    input.ng-invalid.ng-touched:focus {
+       // border: 1px solid $invalid;
+    }
+
+    input.ng-valid.ng-touched {
+      //  border: 1px solid $valid;
+    }
+    input.ng-valid.ng-touched:focus {
+       // border: 1px solid $valid;
+    }
+}

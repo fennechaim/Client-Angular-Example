@@ -1,0 +1,17 @@
+<div class="row">
+  <div class="col-auto" *ngIf="!isToggleEnabled">
+    <span class="fa fa-check lali-primary-color ml-2 mr-2"></span>
+    <span class="text">{{ subCover.name | translate }}</span>
+  </div>
+  <div class="col-auto">
+    <span class="text" translate>CAR_DEDUCTIBLE</span>
+  </div>
+  <mat-select class="col-auto  ml-2 mr-2 custom-select" (change)="onDeductibleChanged(subCover, $event.value)" [(ngModel)]="carProcess.carDeductible.id">
+    <mat-option *ngFor="let option of carDeducstibles | async" [value]="option.id">
+      {{option.name}}
+    </mat-option>
+  </mat-select>
+  <div class="col-auto">
+    <div class="price text-center">({{subCover | policyPremium}})</div>
+  </div>
+</div>

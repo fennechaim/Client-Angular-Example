@@ -1,0 +1,42 @@
+.OffScreen{
+    position:absolute;
+    top: -10000px !important;
+    
+}
+
+
+.RadioButtonContainer{
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.RadioButtonContainer:last-child{
+    margin-left: 0px;
+}
+
+
+.progress-bar-striped{
+    float:right !important;
+}
+
+.next-step-button::before, .previous-step-button::before{
+    background-size: 100% auto;
+}
+
+
+.mydp input{
+    padding-right: 0 !important;
+    padding-left: 60px;
+}
+
+.mydp .invaliddate, .mydp .invalidmonth, .mydp .invalidyear {
+    background-color: #9c6464;
+}
+
+.mydp .btnleftborder{
+    border-left: none !important;
+}
+
+.mydp{
+    border: none !important;
+}

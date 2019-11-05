@@ -1,0 +1,38 @@
+<div class="row">
+  <div class="col-12">
+    <div class="row subcover" *ngIf="!grantedDriversFeatureEnabled">
+      <i class="col-auto fa fa-check lali-primary-color ml-2 mr-2"></i>
+      <span class="col-auto text ml-1" translate>CarComprehensivePartialDamageSubcoverDriverAgeCover1</span>
+      <div class="select-age">
+        <mat-select class="custom-select ml-1 mr-1" [ngModel]="carProcess.thirdPartyPolicySelectedAge.id" (change)="onDriverAgeChanged(subCover, $event.value)">
+          <mat-option *ngFor="let option of thirdPartyDrivingAgeItems" [value]="option.id">{{option.name}}</mat-option>
+
+        </mat-select>
+      </div>
+
+
+      <span class="col-auto text" translate>CarComprehensivePartialDamageSubcoverDriverAgeCover2</span>
+      <span class="col-auto text ml-1 mr-1" translate>CarComprehensivePartialDamageSubcoverLicenseIssuingYears1</span>
+      <mat-select class="custom-select ml-1 mr-1" [ngModel]="carProcess.thirdPartyPolicySelectedDrivingExperience.id" (change)="onDriverLicenseIssuingYearChanged(subCover, $event.value)">
+        <mat-option *ngFor="let option of thirdPartyDrivingExperienceItems" [value]="option.id">{{option.name | translate}}</mat-option>
+      </mat-select>
+      <span class="row text ml-2 mr-2" translate="">THIRD_PARTY_LIABILITY</span>
+    </div>
+    <div class="row" *ngIf="grantedDriversFeatureEnabled">
+      <span class="col-auto text" translate>GRANTED_DRIVERS</span>
+      <mat-select class="col-auto  ml-2 mr-2 custom-select" (change)="onDriverPermissionGroupChanged(subCover, $event.value)" [(ngModel)]="carProcess.driverPermissionGroup.id">
+        <mat-option *ngFor="let option of driverPermissionGroup | async" [value]="option.id">
+          {{option.name | translate}}
+        </mat-option>
+      </mat-select>
+      <div class="col-auto ml-2 mr-2 ">
+        <mat-checkbox [(ngModel)]="carProcess.isDrivingInShabat" (change)="onDrivingInShabatChanged(subCover, $event.checked)">{{'SATURDAY_DRIVING_QUESTION' | translate}}</mat-checkbox>
+      </div>
+      <div class="col-auto ml-2 mr-2">
+        <div class="price text-center">({{subCover | policyPremium}})</div>
+      </div>
+    </div>
+
+
+  </div>
+</div>

@@ -1,0 +1,69 @@
+<form [formGroup]="stepForm" class="container">
+  <div class="row justify-content-center">
+    <div class="col-8">
+      <div class="row justify-content-center">
+        <h2><span translate>GREETING AGAIN</span>{{ firstName }}</h2>
+      </div>
+      <div class="row justify-content-center">
+        <h2 translate>DETAIL_COMPLITION</h2>
+      </div>
+    </div>
+  </div>
+  <div class="row justify-content-center mt-5">
+    <div class="col-lg-4 col-10 ml-5 lali-card p-5 mr-2">
+      <policy-owner-full-details [parentFormGroup]="stepForm" [policyOwnerBirthdayIsReadOnly]="true" [policyOwner]="process.policyOwner"></policy-owner-full-details>
+    </div>
+    <div class="col-lg-4 col-8 align-self-start ml-2">
+
+      <div class="row">
+        <vehicle-v2 class="lali-card" [vehicle]="process.insuredCar" [protections]="process.availableProtectionSystems" [parentFormGroup]="stepForm"></vehicle-v2>
+      </div>
+
+      <ng-container *ngIf="process.firstYoungDriver.fullName">
+        <driver class="row" [titleKey]="'ADDITIONAL_DRIVER'" [birthdayReadOnly]="true" [isIdentityNumberRequired]="true" #firstYoungDriver
+          [key]="'firstYoungDriver'" [driverLicenseDateDisabled]="true" [parentFormGroup]="stepForm" [driver]="process.firstYoungDriver"></driver>
+      </ng-container>
+
+      <ng-container *ngIf="process.secondYoungDriver.fullName">
+        <driver class="row" [titleKey]="'ADDITIONAL_DRIVER'" [birthdayReadOnly]="true" [isIdentityNumberRequired]="true" #firstYoungDriver
+          [key]="'secondYoungDriver'" [driverLicenseDateDisabled]="true" [parentFormGroup]="stepForm" [driver]="process.secondYoungDriver"></driver>
+      </ng-container>
+
+
+    </div>
+
+  </div>
+  <div class="row justify-content-start mt-4">
+    <div class="col-6">
+      <subordinated-entity [subordinateEntity]="process.subordinatedCar" *ngIf="isComprehensiveAccepted" [parentFormGroup]="stepForm"></subordinated-entity>
+    </div>
+  </div>
+
+
+
+  <div class="row mt-5 justify-content-start">
+    <div class="col-auto">
+      <mat-checkbox (change)="toggleTechnologyAgreement()" formControlName="technologyAgreement" [checked]="process.isTechnologyDisclaimerAccepted" class="col-auto"><span>{{ 'TERMS_OF_SERVICE_AGREEMENT_1' | translate }}</span></mat-checkbox>
+    </div>
+
+  </div>
+  <div class="row justify-content-start">
+    <div class="col-auto">
+      <mat-checkbox (change)="toggleEssentialDocumentAgreement()" formControlName="essentialDocumentAgreement" [checked]="process.isEssentialDocumentDisclaimerAccepted" class="col-auto"><span>{{ 'TERMS_OF_SERVICE_AGREEMENT_2_PRT1' | translate }}</span><span class="doc-link" (click)="showPolicySubstantialDocument()"> {{'TERMS_OF_SERVICE_AGREEMENT_2_PRT2' | translate }} </span>        {{'TERMS_OF_SERVICE_AGREEMENT_2_PRT3' | translate }}</mat-checkbox>
+    </div>
+    <div *ngIf="errorDisplayingDocument" class="font-rd" translate>POLICY_DOCUMENT_ERROR</div>
+
+  </div>
+  <div class="row ml-3 mr-3" translate="">IMPORTANT_READ_BEFORE_CONFIRMATION</div>
+
+  <div class="row justify-content-center mt-5">
+    <button (click)="creditPayment()" class="credit-card-button designButton  scn  oval leftIcon ml-4 mr-5">
+      <div class="innerText" translate>CREDIT_CARD_PAYMENT</div>
+    </button>
+    <button (click)="cashPayment()" class="cash-button designButton   scn  oval leftIcon mr-4" *ngIf="process.cashPaymentAvailable">
+      <div class="innerText" translate>CASH_PAYMENT</div>
+    </button>
+  </div>
+
+</form>
+<document-modal #documentModal fileBytes="{{fileBytes}}" showModal="{{showModal}}"></document-modal>

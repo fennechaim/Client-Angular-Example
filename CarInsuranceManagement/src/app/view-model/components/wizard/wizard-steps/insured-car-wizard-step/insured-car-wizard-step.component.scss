@@ -1,0 +1,11 @@
+@import "../../../../styles/mixins";
+@include inputValidation($valid, $invalid);
+
+
+.insured-car-container{
+  width:600px;
+}
+
+.mat-select{
+  display:block;
+}

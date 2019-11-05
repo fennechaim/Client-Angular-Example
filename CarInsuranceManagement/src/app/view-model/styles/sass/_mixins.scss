@@ -1,0 +1,16 @@
+@mixin transitionSupport ($property, $duration, $effect) {
+  transition: $property $duration $effect;
+  -webkit-transition: $property $duration $effect;
+  -moz-transition: $property $duration $effect;
+}
+
+@mixin clearfix {
+  &:before,
+  &:after {
+    content: '';
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
